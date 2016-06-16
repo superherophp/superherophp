@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    overflow:auto;
+    overflow-y: scroll;
+}
+
+body {
+    background:#fff;
+    color:rgba(0,0,0,1);
+}
+
+section {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 20px;
+}
+
+p {
+}
+
+.toc {
+    background-color: coral;
+}
+
+.local {
+    background-color: crimson;
+}

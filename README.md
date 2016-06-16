@@ -1,14 +1,5 @@
-
 ## Todo
-Google Analytics
 Mailchimp
-Impress
-
-## Domains
-superherodeveloper.com
-superherodevstack.com 
-superherophp.com
-
 
 ## TOC
 ### Understanding your work
@@ -17,13 +8,6 @@ What is code http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/
 
 ### Organize your code:
 http://12factor.net/
-
-
-### Thinking Global Acting Local: Your personal local Dev Stack
-https://www.vagrantup.com/docs/
-https://www.docker.com/products/docker-toolbox
-https://www.sourcetreeapp.com/
-https://www.jetbrains.com/phpstorm/
 
 
 ### Plan your work
