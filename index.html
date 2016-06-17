@@ -9,6 +9,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet"
           type="text/css">
+    <link href="css/foundation-icons.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -23,19 +24,12 @@
         </p>
     </div>
 </section>
+
 <section class="toc">
     <ol>
-        <li><a href="#">Source Code Management</a></li>
-        <li><a href="#local">Thinking Global Acting Local: Your personal local Dev Stack</a></li>
-        <li><a href="#">Code Review</a> pull request</li>
-        <li><a href="#">CI</a> jenkins, job dsl</li>
-        <li><a href="#">Build</a></li>
-        <li><a href="#">Test</a></li>
-        <li><a href="#">Analyse</a> sonarqube</li>
-        <li><a href="#">Package and Distribute</a></li>
-        <li><a href="#">Repo: Store and Deliver</a> nexus</li>
-        <li><a href="#">Config and Provision</a></li>
-        <li><a href="#">Deploy</a></li>
+        <li><a href="#local">Thinking Global Acting Local: Your local development environment</a></li>
+        <li><a href="#code">Organizing your code: API design, patterns and frameworks</a></li>
+        <li><a href="#tools">Tools of the trade: Workflow, developer tools and debugging</a></li>
     </ol>
     <p>
         Organized by <a href="https://github.com/superherophp">https://github.com/superherophp</a>,
@@ -46,20 +40,76 @@
 </section>
 
 <section class="local" id="local">
-    <h2>Thinking Global Acting Local: Your personal local Dev Stack</h2>
+    <h2><i class="fi-laptop"></i> Thinking Global Acting Local: Your local development environment</h2>
     <ol>
-        <li><a href="https://www.vagrantup.com/docs/">Development environments made easy. <span>HashiCorp, www.vagrantup.com</span></a>
+        <li><a href="https://www.jetbrains.com/phpstorm/"><strong>Tool</strong> PHPStorm</a></li>
+        <li><a href="https://www.vagrantup.com/docs/"><strong>Tool</strong> Development environments made easy. <span>HashiCorp, www.vagrantup.com</span></a>
         </li>
-        <li>https://www.docker.com/products/docker-toolbox</li>
-        <li>https://www.sourcetreeapp.com/</li>
-        <li>https://www.jetbrains.com/phpstorm/</li>
+        <li><a href="https://www.docker.com/products/docker-toolbox"><strong>Tool</strong> Docker Toolbox</a></li>
+        http://www.newmediacampaigns.com/blog/docker-for-php-developers
+        http://phusion.github.io/baseimage-docker/
+        https://webdevops.io/projects/dockerfiles/
     </ol>
 </section>
+
+<section class="code" id="code">
+    <h2><i class="fi-compass"></i> Organizing your code: API design, patterns and frameworks</h2>
+    <ol>
+        <li><a href="http://12factor.net/">The Twelve-Factor App. <span>Adam Wiggins, 12factor.net</span></a></li>
+    </ol>
+</section>
+
+<section class="debug" id="debug">
+    <h2>Debugging and Profiling</h2>
+    xdebug
+</section>
+
+<section class="tools" id="tools">
+    <h2><i class="fi-wrench"></i> Tools of the trade: Workflow, developer tools and debugging</h2>
+    <ol>
+        <li><a href="http://rogerdudler.github.io/git-guide/index.html">git - the simple guide <span>Roger Dudler, rogerdudler.github.io</span></a>
+        </li>
+        <li><a href="https://www.atlassian.com/git/">Getting Git Right <span>Atlassian, www.atlassian.com</span></a>
+        </li>
+        <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model <span>Vincent Driessen, nvie.com</span></a>
+        </li>
+        <li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow <span
+            class="article-source">Github, guides.github.com</span> <span class="article-read-time">5 minute read</span></a>
+        </li>
+        <li><a href="https://www.sourcetreeapp.com/"><strong>Tool</strong> Sourcetreeapp</a></li>
+
+
+        Where to store the code: bitbucket, gitlab, github
+        composer
+        phpunit
+        https://rtyley.github.io/bfg-repo-cleaner/
+        http://martinfowler.com/bliki/FeatureBranch.html
+        http://martinfowler.com/bliki/FeatureToggle.html
+    </ol>
+</section>
+
+<section class="deploy">
+    <h2><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
+</section>
+
+<section class="legacy" id="legacy">
+    <h2><i class="fi-puzzle"></i> Dealing with Legacy Code</h2>
+</section>
+
+<section class="understand" id="understand">
+    <h2><i class="fi-lightbulb"></i> Understanding your work</h2>
+    <ol>
+        <li><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span>Paul Ford, www.bloomberg.com</span></a>
+        </li>
+    </ol>
+</section>
+
 <footer class="footer">
     <ul class="small-print">
         <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint | Disclaimer</a></li>
     </ul>
 </footer>
+
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;

@@ -4,3 +4,5 @@
 # Intellij Idea
 .idea/
 *.iml
+
+/tmp
