@@ -6,16 +6,17 @@ html, body {
 }
 
 html {
-    overflow:auto;
+    overflow: auto;
     overflow-y: scroll;
 }
 
 body {
-    background:#fff;
-    color:rgba(0,0,0,1);
+    background: #fff;
+    color: rgba(0, 0, 0, 1);
+    font-size: 7px;
 }
 
-section {
+section, .section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -23,14 +24,96 @@ section {
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    padding: 20px;
+    padding: 5em;
+}
+
+.bungee {
+    font-family: 'Bungee Shade', cursive;
+}
+
+.inline {
+    font-family: 'Bungee Inline', cursive;
+}
+
+.press {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.slackey {
+    font-family: 'Slackey', cursive;
+}
+
+.codystar {
+    font-family: 'Codystar', cursive;
+}
+
+.bangers {
+    font-family: 'Bangers', cursive;
+}
+
+.ranchers {
+    font-family: 'Ranchers', cursive;
+}
+
+.shadow {
+    font-family: 'Londrina Shadow', cursive;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-weight: 400;
+    font-size: 4em;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-weight: 400;
+    font-size: 3em;
+    font-style: normal;
 }
 
 p {
+    font-size: 2em;
+}
+
+ol, ul {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    display: none;
+}
+
+.hero {
+    color: #ffffff;
+    background-color: #3f51b5;
+}
+
+.hero a {
+    color: #ffffff;
 }
 
 .toc {
+    color: #ffffff;
+    /*background-color: #ffeb3b;*/
+    background-color: #FF5252;
+}
+
+.toc a {
+    color: #ffffff;
 }
 
 .local {
+}
+
+.footer {
+    background-color: #37474f;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
 }
