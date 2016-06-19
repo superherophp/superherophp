@@ -12,7 +12,8 @@ html {
 
 body {
     background: #fff;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, .7);
+    font-family: 'Open Sans', sans-serif;
     font-size: 7px;
 }
 
@@ -83,8 +84,22 @@ ol, ul {
     padding: 0;
 }
 
+li {
+    line-height: 1.5;
+}
+
+li a {
+    display: block;
+    padding: .3em 0;
+    text-decoration: none;
+}
+
 i {
     display: none;
+}
+
+a {
+    color: #2962ff;
 }
 
 .hero {
@@ -100,6 +115,7 @@ i {
     color: #ffffff;
     /*background-color: #ffeb3b;*/
     background-color: #FF5252;
+    text-decoration: underline;
 }
 
 .toc a {
