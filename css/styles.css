@@ -36,10 +36,6 @@ section, .section {
     font-family: 'Bungee Inline', cursive;
 }
 
-.press {
-    font-family: 'Press Start 2P', cursive;
-}
-
 .slackey {
     font-family: 'Slackey', cursive;
 }
@@ -56,19 +52,15 @@ section, .section {
     font-family: 'Ranchers', cursive;
 }
 
-.shadow {
-    font-family: 'Londrina Shadow', cursive;
-}
-
 h1 {
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Ranchers', cursive;
     font-weight: 400;
     font-size: 4em;
     font-style: normal;
 }
 
 h2 {
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Ranchers', cursive;
     font-weight: 400;
     font-size: 3em;
     font-style: normal;
@@ -95,7 +87,8 @@ li a {
 }
 
 i {
-    display: none;
+    /*display: none;*/
+    margin-right: .3em;
 }
 
 a {
