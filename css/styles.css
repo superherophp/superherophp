@@ -40,10 +40,6 @@ section, .section {
     font-family: 'Slackey', cursive;
 }
 
-.codystar {
-    font-family: 'Codystar', cursive;
-}
-
 .bangers {
     font-family: 'Bangers', cursive;
 }
@@ -86,6 +82,17 @@ li a {
     text-decoration: none;
 }
 
+li a strong {
+    background-color: #2962ff;
+    border-radius: .5em 0;
+    color: #ffffff;
+    padding: 0 .3em;
+}
+
+li a span {
+    color: #a9a9a9;
+}
+
 i {
     /*display: none;*/
     margin-right: .3em;
@@ -108,11 +115,11 @@ a {
     color: #ffffff;
     /*background-color: #ffeb3b;*/
     background-color: #FF5252;
-    text-decoration: underline;
 }
 
 .toc a {
     color: #ffffff;
+    text-decoration: underline;
 }
 
 .local {
