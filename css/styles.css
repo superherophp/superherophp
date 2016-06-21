@@ -29,29 +29,17 @@ section, .section {
     position: relative;
 }
 
-.bungee {
-    font-family: 'Bungee Shade', cursive;
-}
-
-.inline {
-    font-family: 'Bungee Inline', cursive;
-}
-
-.slackey {
-    font-family: 'Slackey', cursive;
-}
-
 h1 {
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Bungee Shade', cursive;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 3.5em;
     font-style: normal;
 }
 
 h2 {
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Bungee Shade', cursive;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 3.5em;
     font-style: normal;
 }
 
@@ -112,7 +100,6 @@ a {
 
 .toc a {
     color: #ffffff;
-    text-decoration: underline;
 }
 
 .local {
