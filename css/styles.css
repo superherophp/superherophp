@@ -21,11 +21,12 @@ section, .section {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative;
     background-position: top right;
     background-repeat: no-repeat;
     background-size: auto 100%;
+    overflow: hidden;
     padding: 5em;
+    position: relative;
 }
 
 .bungee {
@@ -40,23 +41,15 @@ section, .section {
     font-family: 'Slackey', cursive;
 }
 
-.bangers {
-    font-family: 'Bangers', cursive;
-}
-
-.ranchers {
-    font-family: 'Ranchers', cursive;
-}
-
 h1 {
-    font-family: 'Ranchers', cursive;
+    font-family: 'Bungee Inline', cursive;
     font-weight: 400;
     font-size: 4em;
     font-style: normal;
 }
 
 h2 {
-    font-family: 'Ranchers', cursive;
+    font-family: 'Bungee Inline', cursive;
     font-weight: 400;
     font-size: 3em;
     font-style: normal;
