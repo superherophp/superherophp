@@ -25,8 +25,20 @@ section, .section {
     background-repeat: no-repeat;
     background-size: auto 100%;
     overflow: hidden;
-    padding: 5em;
+    padding: 3em 5em 5em;
     position: relative;
+}
+
+.a1 {
+    font-family: 'Holtwood One SC', serif;
+}
+
+.a5 {
+    font-family: 'Seymour One', sans-serif;
+}
+
+.a7 {
+    font-family: 'Faster One', cursive;
 }
 
 h1 {
@@ -94,7 +106,6 @@ a {
 
 .toc {
     color: #ffffff;
-    /*background-color: #ffeb3b;*/
     background-color: #FF5252;
 }
 
