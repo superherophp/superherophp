@@ -33,9 +33,6 @@ section, .section {
     font-family: 'Holtwood One SC', serif;
 }
 
-.a5 {
-    font-family: 'Seymour One', sans-serif;
-}
 
 .a7 {
     font-family: 'Faster One', cursive;
@@ -62,7 +59,7 @@ p {
 ol, ul {
     font-size: 2em;
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 1em;
 }
 
 li {
@@ -75,6 +72,10 @@ li a {
     text-decoration: none;
 }
 
+li a:hover {
+    background-color: aliceblue;
+}
+
 li a strong {
     background-color: #2962ff;
     border-radius: .5em 0;
@@ -84,10 +85,30 @@ li a strong {
 
 li a span {
     color: #a9a9a9;
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 8em;
+    }
+
+    section .inner, .section .inner {
+        margin: 0 auto;
+        max-width: 130em;
+    }
+
+    li a span {
+        display: inline;
+        float: right;
+    }
 }
 
 i {
-    /*display: none;*/
     margin-right: .3em;
 }
 

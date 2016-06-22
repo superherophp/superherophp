@@ -10,7 +10,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet"
           type="text/css">
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Bungee+Shade|Faster+One|Holtwood+One+SC|Seymour+One"
+        href="https://fonts.googleapis.com/css?family=Open+Sans|Bungee+Shade|Faster+One|Holtwood+One+SC"
         rel="stylesheet">
     <link href="css/foundation-icons.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -39,7 +39,6 @@
     <div class="inner">
         <h1>Superhero.php</h1>
         <h1 class="a1">Superhero.php</h1>
-        <h1 class="a5">Superhero.php</h1>
         <h1 class="a7">Superhero.php</h1>
         <p>
             Follow us on <a href="http://twitter.com/superherophp">Twitter</a>,
@@ -51,127 +50,155 @@
 </section>
 
 <section class="toc">
-    <ol>
-        <li><a href="#local">Thinking Global Acting Local: Your local development environment</a></li>
-        <li><a href="#tools">Tools of the trade: Workflow, developer tools and debugging</a></li>
-        <li><a href="#code">Organizing your code: API design, patterns and frameworks</a></li>
-        <li><a href="#debug">Debugging and Profiling</a></li>
-        <li><a href="#secure">Securing your app</a></li>
-        <li><a href="#debt">Code Quality: Fighting against Technical Debt</a></li>
-        <li><a href="#deploy">Deploy and deliver</a></li>
-        <li><a href="#legacy">Dealing with Legacy Code</a></li>
-        <li><a href="#understand">Understanding your work</a></li>
-    </ol>
-    <p>
-        Organized by <a href="https://github.com/Bussmeyer">Thomas Bußmeyer</a>,
+    <div class="inner">
+        <ol>
+            <li><a href="#local">Thinking Global Acting Local: Your local development environment</a></li>
+            <li><a href="#tools">Tools of the trade: Workflow, developer tools and debugging</a></li>
+            <li><a href="#code">Organizing your code: API design, patterns and frameworks</a></li>
+            <li><a href="#debug">Debugging and Profiling</a></li>
+            <li><a href="#secure">Securing your app</a></li>
+            <li><a href="#debt">Code Quality: Fighting against Technical Debt</a></li>
+            <li><a href="#deploy">Deploy and deliver</a></li>
+            <li><a href="#legacy">Dealing with Legacy Code</a></li>
+            <li><a href="#understand">Understanding your work</a></li>
+        </ol>
+        <p>
+            Organized by <a href="https://github.com/Bussmeyer">Thomas Bußmeyer</a>,
         <span class="updated-on"> – Last updated on <time datetime="2016-06-15T21:12:15Z" is="relative-time"
                                                           title="Jun 15, 2016, 10:12 PM GMT+1">Jun 15, 2016</time>
         </span>
-    </p>
+        </p>
+    </div>
 </section>
 
 <section class="local" id="local">
-    <h2><i class="fi-laptop"></i> Thinking Global Acting Local: Your local development environment</h2>
-    <ol>
-        <li><a
-            href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
-            I use Vagrant or Docker for creating an isolated environment? <span>stackoverflow.com</span></a></li>
-        <li><a href="https://webdevops.io/projects/dockerfiles/"><strong>Tool</strong> Making web development easier
-            <span>Webdevops, webdevops.io</span></a></li>
-        <li><a href="https://www.vagrantup.com/docs/"><strong>Tool</strong> Development environments made easy. <span>HashiCorp, www.vagrantup.com</span></a>
-        </li>
-        <li><a href="https://www.docker.com/products/docker-toolbox"><strong>Tool</strong> Docker Toolbox</a></li>
-        <li><a href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker for PHP Developers <span>Josh Lockhart, www.newmediacampaigns.com</span></a>
-        </li>
-    </ol>
+    <div class="inner">
+        <h2><i class="fi-laptop"></i> Thinking Global Acting Local: Your local development environment</h2>
+        <ol>
+            <li><a
+                href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
+                I use Vagrant or Docker for creating an isolated environment? <span>stackoverflow.com</span></a></li>
+            <li><a href="https://webdevops.io/projects/dockerfiles/"><strong>Tool</strong> Making web development easier
+                <span>Webdevops, webdevops.io</span></a></li>
+            <li><a href="https://www.vagrantup.com/docs/"><strong>Tool</strong> Development environments made easy.
+                <span>HashiCorp, www.vagrantup.com</span></a>
+            </li>
+            <li><a href="https://www.docker.com/products/docker-toolbox"><strong>Tool</strong> Docker Toolbox</a></li>
+            <li><a href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker for PHP Developers
+                <span>Josh Lockhart, www.newmediacampaigns.com</span></a>
+            </li>
+        </ol>
+    </div>
 </section>
 
 <section class="tools" id="tools">
-    <h2><i class="fi-wrench"></i> Tools of the trade: Workflow, developer tools and debugging</h2>
-    <ol>
-        <li><a href="http://rogerdudler.github.io/git-guide/index.html">git - the simple guide <span>Roger Dudler, rogerdudler.github.io</span></a>
-        </li>
-        <li><a href="https://www.atlassian.com/git/">Getting Git Right <span>Atlassian, www.atlassian.com</span></a>
-        </li>
-        <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model <span>Vincent Driessen, nvie.com</span></a>
-        </li>
-        <li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow <span
-            class="article-source">Github, guides.github.com</span> <span class="article-read-time">5 minute read</span></a>
-        </li>
-        <li><a href="https://www.sourcetreeapp.com/"><strong>Tool</strong> Sourcetreeapp</a></li>
-        <li><a href="https://www.jetbrains.com/phpstorm/"><strong>Tool</strong> PHPStorm</a></li>
-        <li><a href="https://rtyley.github.io/bfg-repo-cleaner/"><strong>Tool</strong> BFG Repo-Cleaner</a></li>
-        <li><a href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span>Martin Fowler, http://martinfowler.com/</span></a></li>
-        <li><a href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span>Martin Fowler, http://martinfowler.com/</span></a></li>
-    </ol>
-    <p>composer
-        phpunit
+    <div class="inner">
+        <h2><i class="fi-wrench"></i> Tools of the trade: Workflow, developer tools and debugging</h2>
+        <ol>
+            <li><a href="http://rogerdudler.github.io/git-guide/index.html">git - the simple guide <span>Roger Dudler, rogerdudler.github.io</span></a>
+            </li>
+            <li><a href="https://www.atlassian.com/git/">Getting Git Right <span>Atlassian, www.atlassian.com</span></a>
+            </li>
+            <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model
+                <span>Vincent Driessen, nvie.com</span></a>
+            </li>
+            <li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow <span
+                class="article-source">Github, guides.github.com</span> <span
+                class="article-read-time">5 minute read</span></a>
+            </li>
+            <li><a href="https://www.sourcetreeapp.com/"><strong>Tool</strong> Sourcetreeapp</a></li>
+            <li><a href="https://www.jetbrains.com/phpstorm/"><strong>Tool</strong> PHPStorm</a></li>
+            <li><a href="https://rtyley.github.io/bfg-repo-cleaner/"><strong>Tool</strong> BFG Repo-Cleaner</a></li>
+            <li><a href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span>Martin Fowler, http://martinfowler.com/</span></a>
+            </li>
+            <li><a href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span>Martin Fowler, http://martinfowler.com/</span></a>
+            </li>
+        </ol>
+        <p>composer
+            phpunit
 
 
         </p>
+    </div>
 </section>
 
 <section class="code" id="code">
-    <h2><i class="fi-compass"></i> Organizing your code: API design, patterns and frameworks</h2>
-    <ol>
-        <li><a href="http://www.phptherightway.com/">PHP The Right Way
-            <span>Josh Lockhart, www.phptherightway.com</span></a></li>
-        <li><a href="http://12factor.net/">The Twelve-Factor App. <span>Adam Wiggins, 12factor.net</span></a></li>
-        <li><a href="https://www.amazon.de/dp/0132350882"><strong>Book</strong> Clean Code: A Handbook of Agile Software
-            Craftsmanship <span>Robert C. Martin</span></a></li>
-        <li><a href="https://www.amazon.de/dp/020161622X/"><strong>Book</strong> The Pragmatic Programmer. From
-            Journeyman to Master <span>Andrew Hunt, David Thomas</span></a></li>
-    </ol>
+    <div class="inner">
+        <h2><i class="fi-compass"></i> Organizing your code: API design, patterns and frameworks</h2>
+        <ol>
+            <li><a href="http://www.phptherightway.com/">PHP The Right Way
+                <span>Josh Lockhart, www.phptherightway.com</span></a></li>
+            <li><a href="http://12factor.net/">The Twelve-Factor App. <span>Adam Wiggins, 12factor.net</span></a></li>
+            <li><a href="https://www.amazon.de/dp/0132350882"><strong>Book</strong> Clean Code: A Handbook of Agile
+                Software
+                Craftsmanship <span>Robert C. Martin</span></a></li>
+            <li><a href="https://www.amazon.de/dp/020161622X/"><strong>Book</strong> The Pragmatic Programmer. From
+                Journeyman to Master <span>Andrew Hunt, David Thomas</span></a></li>
+        </ol>
+    </div>
 </section>
 
 <section class="debug" id="debug">
-    <h2><i class="fi-magnifying-glass"></i> Debugging and Profiling</h2>
-    <p>xdebug</p>
+    <div class="inner">
+        <h2><i class="fi-magnifying-glass"></i> Debugging and Profiling</h2>
+        <p>xdebug</p>
+    </div>
 </section>
 
 <section class="secure" id="secure">
-    <h2><i class="fi-lock"></i> Securing your app</h2>
-    <p>sqlmap
-        owasp zap
-        https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet
-        Security Poster as PDF</p>
+    <div class="inner">
+        <h2><i class="fi-lock"></i> Securing your app</h2>
+        <p>sqlmap
+            owasp zap
+            https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet
+            Security Poster as PDF</p></div>
 </section>
 
 <section class="debt" id="debt">
-    <h2><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt</h2>
-    <ol>
-        <li><a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects <span>Sebastian Bergmann, jenkins-php.org</span></a>
-        </li>
-        <li><a href="https://www.amazon.com/gp/product/0201485672"><strong>Book</strong> Refactoring: Improving the
-            Design of Existing Code <span>Martin Fowler</span></a></li>
-    </ol>
-    <p>
-        Sonarqube
-        Code Review</p>
+    <div class="inner">
+        <h2><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt</h2>
+        <ol>
+            <li><a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects <span>Sebastian Bergmann, jenkins-php.org</span></a>
+            </li>
+            <li><a href="https://www.amazon.com/gp/product/0201485672"><strong>Book</strong> Refactoring: Improving the
+                Design of Existing Code <span>Martin Fowler</span></a></li>
+        </ol>
+        <p>
+            Sonarqube
+            Code Review</p>
+    </div>
 </section>
 
 <section class="deploy" id="deploy">
-    <h2><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
-    <p>https://dzone.com/articles/continuous-integration-php</p>
+    <div class="inner">
+        <h2><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
+        <p>https://dzone.com/articles/continuous-integration-php</p></div>
 </section>
 
 <section class="legacy" id="legacy">
-    <h2><i class="fi-puzzle"></i> Dealing with Legacy Code</h2>
+    <div class="inner">
+        <h2><i class="fi-puzzle"></i> Dealing with Legacy Code</h2>
+    </div>
 </section>
 
 <section class="understand" id="understand">
-    <h2><i class="fi-lightbulb"></i> Understanding your work</h2>
-    <ol>
-        <li><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span>Paul Ford, www.bloomberg.com</span></a>
-        </li>
-    </ol>
+    <div class="inner">
+        <h2><i class="fi-lightbulb"></i> Understanding your work</h2>
+        <ol>
+            <li><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span>Paul Ford, www.bloomberg.com</span></a>
+            </li>
+        </ol>
+    </div>
 </section>
 
 <footer class="footer section">
-    <ul class="small-print">
-        <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint | Disclaimer</a></li>
-        <li>Made with <i class="fi-heart"></i> in Berlin</li>
-    </ul>
+    <div class="inner">
+        <ul class="small-print">
+            <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint | Disclaimer</a>
+            </li>
+            <li>Made with <i class="fi-heart"></i> in Berlin</li>
+        </ul>
+    </div>
 </footer>
 
 <script>
