@@ -7,11 +7,16 @@
           content="width=device-width, initial-scale = 1.0, user-scalable = no, minimum-scale = 1.0, maximum-scale = 1.0">
     <meta name="apple-mobile-web-app-capable" content="no">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" rel="stylesheet"
-          type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans|Faster+One"
-        rel="stylesheet">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" as="style"
+          onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans|Faster+One" as="style"
+          onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Faster+One">
+    </noscript>
     <style>
         html, body {
             margin: 0;
