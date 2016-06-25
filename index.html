@@ -153,7 +153,7 @@
         }
 
         body {
-            background: #fff;
+            background: #ffffff;
             color: rgba(0, 0, 0, .7);
             font-family: 'Open Sans', sans-serif;
             font-size: 7px;
@@ -199,7 +199,7 @@
             line-height: 1.5;
         }
 
-        li a {
+        .recommended-reading__link {
             display: block;
             padding: .5em 0;
             text-decoration: none;
@@ -209,14 +209,14 @@
             background-color: aliceblue;
         }
 
-        li a strong {
+        .recommended-reading__media-type {
             background-color: #2962ff;
             border-radius: .5em 0;
             color: #ffffff;
             padding: 0 .3em;
         }
 
-        li a span {
+        .recommended-reading__author-source {
             color: #a9a9a9;
             display: none;
         }
@@ -252,9 +252,6 @@
             background: none;
         }
 
-        .local {
-        }
-
         .footer {
             background-color: #37474f;
             color: #ffffff;
@@ -287,10 +284,10 @@
 
             section .inner, .section .inner {
                 margin: 0 auto;
-                max-width: 130em;
+                max-width: 120em;
             }
 
-            li a span {
+            .recommended-reading__author-source {
                 display: inline;
                 float: right;
             }
@@ -325,8 +322,9 @@
         </ol>
         <p>
             Organized by <a href="https://github.com/Bussmeyer">Thomas Bußmeyer</a>,
-        <span class="updated-on"> – Last updated on <time datetime="2016-06-15T21:12:15Z" is="relative-time"
-                                                          title="Jun 15, 2016, 10:12 PM GMT+1">Jun 15, 2016</time>
+        <span class="updated-on"> – Last updated on <time
+            datetime="2016-06-15T21:12:15Z" is="relative-time"
+            title="Jun 15, 2016, 10:12 PM GMT+1">Jun 15, 2016</time>
         </span>
         </p>
     </div>
@@ -336,18 +334,25 @@
     <div class="inner">
         <h2><i class="fi-laptop"></i> Thinking Global Acting Local: Your local development environment</h2>
         <ol>
-            <li><a
-                href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
-                I use Vagrant or Docker for creating an isolated environment? <span>stackoverflow.com</span></a></li>
-            <li><a href="https://webdevops.io/projects/dockerfiles/"><strong>Tool</strong> Making web development easier
-                <span>Webdevops, webdevops.io</span></a></li>
-            <li><a href="https://www.vagrantup.com/docs/"><strong>Tool</strong> Development environments made easy.
-                <span>HashiCorp, www.vagrantup.com</span></a>
+            <li><a class="recommended-reading__link"
+                   href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
+                I use Vagrant or Docker for creating an isolated environment? <span
+                    class="recommended-reading__author-source">stackoverflow.com</span></a></li>
+            <li><a class="recommended-reading__link" href="https://webdevops.io/projects/dockerfiles/"><strong
+                class="recommended-reading__media-type" class="recommended-reading__media-type">Tool</strong> Making web
+                development easier
+                <span class="recommended-reading__author-source">Webdevops, webdevops.io</span></a></li>
+            <li><a class="recommended-reading__link" href="https://www.vagrantup.com/docs/"><strong
+                class="recommended-reading__media-type">Tool</strong> Development environments made easy.
+                <span class="recommended-reading__author-source">HashiCorp, www.vagrantup.com</span></a>
             </li>
-            <li><a href="https://www.docker.com/products/docker-toolbox"><strong>Tool</strong> Docker Toolbox <span>Docker Inc., www.docker.com</span></a>
+            <li><a class="recommended-reading__link" href="https://www.docker.com/products/docker-toolbox"><strong
+                class="recommended-reading__media-type">Tool</strong> Docker Toolbox <span
+                class="recommended-reading__author-source">Docker Inc., www.docker.com</span></a>
             </li>
-            <li><a href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker for PHP Developers
-                <span>Josh Lockhart, www.newmediacampaigns.com</span></a>
+            <li><a class="recommended-reading__link"
+                   href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker for PHP Developers
+                <span class="recommended-reading__author-source">Josh Lockhart, www.newmediacampaigns.com</span></a>
             </li>
         </ol>
     </div>
@@ -357,26 +362,39 @@
     <div class="inner">
         <h2><i class="fi-wrench"></i> Tools of the trade: Workflow and developer tools</h2>
         <ol>
-            <li><a href="http://rogerdudler.github.io/git-guide/index.html">git - the simple guide <span>Roger Dudler, rogerdudler.github.io</span></a>
+            <li><a class="recommended-reading__link" href="http://rogerdudler.github.io/git-guide/index.html">git - the
+                simple guide <span
+                    class="recommended-reading__author-source">Roger Dudler, rogerdudler.github.io</span></a>
             </li>
-            <li><a href="https://www.atlassian.com/git/">Getting Git Right <span>Atlassian, www.atlassian.com</span></a>
+            <li><a class="recommended-reading__link" href="https://www.atlassian.com/git/">Getting Git Right <span
+                class="recommended-reading__author-source">Atlassian, www.atlassian.com</span></a>
             </li>
-            <li><a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model
-                <span>Vincent Driessen, nvie.com</span></a>
+            <li><a class="recommended-reading__link" href="http://nvie.com/posts/a-successful-git-branching-model/">A
+                successful Git branching model
+                <span class="recommended-reading__author-source">Vincent Driessen, nvie.com</span></a>
             </li>
-            <li><a href="https://guides.github.com/introduction/flow/">Understanding the GitHub Flow <span
-                class="article-source">Github, guides.github.com</span> <span
-                class="article-read-time">5 minute read</span></a>
+            <li><a class="recommended-reading__link" href="https://guides.github.com/introduction/flow/">Understanding
+                the GitHub Flow <span
+                    class="recommended-reading__author-source">Github, guides.github.com</span> <span
+                    class="recommended-reading__read-time">5 minute read</span></a>
             </li>
-            <li><a href="https://www.sourcetreeapp.com/"><strong>Tool</strong> Sourcetreeapp <span>Atlassian</span></a>
+            <li><a class="recommended-reading__link" href="https://www.sourcetreeapp.com/"><strong
+                class="recommended-reading__media-type">Tool</strong> Sourcetreeapp <span
+                class="recommended-reading__author-source">Atlassian</span></a>
             </li>
-            <li><a href="https://www.jetbrains.com/phpstorm/"><strong>Tool</strong> PHPStorm <span>JetBrains</span></a>
+            <li><a class="recommended-reading__link" href="https://www.jetbrains.com/phpstorm/"><strong
+                class="recommended-reading__media-type">Tool</strong> PHPStorm <span
+                class="recommended-reading__author-source">JetBrains</span></a>
             </li>
-            <li><a href="https://rtyley.github.io/bfg-repo-cleaner/"><strong>Tool</strong> BFG Repo-Cleaner <span>Roberto Tyley</span></a>
+            <li><a class="recommended-reading__link" href="https://rtyley.github.io/bfg-repo-cleaner/"><strong
+                class="recommended-reading__media-type">Tool</strong> BFG Repo-Cleaner <span
+                class="recommended-reading__author-source">Roberto Tyley</span></a>
             </li>
-            <li><a href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span>Martin Fowler, martinfowler.com/</span></a>
+            <li><a class="recommended-reading__link" href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span
+                class="recommended-reading__author-source">Martin Fowler, martinfowler.com/</span></a>
             </li>
-            <li><a href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span>Martin Fowler, martinfowler.com/</span></a>
+            <li><a class="recommended-reading__link" href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span
+                class="recommended-reading__author-source">Martin Fowler, martinfowler.com/</span></a>
             </li>
             <li>composer</li>
             <li>phpunit</li>
@@ -388,14 +406,19 @@
     <div class="inner">
         <h2><i class="fi-compass"></i> Organizing your code: API design, patterns and frameworks</h2>
         <ol>
-            <li><a href="http://www.phptherightway.com/">PHP The Right Way
-                <span>Josh Lockhart, www.phptherightway.com</span></a></li>
-            <li><a href="http://12factor.net/">The Twelve-Factor App. <span>Adam Wiggins, 12factor.net</span></a></li>
-            <li><a href="https://www.amazon.de/dp/0132350882"><strong>Book</strong> Clean Code: A Handbook of Agile
+            <li><a class="recommended-reading__link" href="http://www.phptherightway.com/">PHP The Right Way
+                <span class="recommended-reading__author-source">Josh Lockhart, www.phptherightway.com</span></a></li>
+            <li><a class="recommended-reading__link" href="http://12factor.net/">The Twelve-Factor App. <span
+                class="recommended-reading__author-source">Adam Wiggins, 12factor.net</span></a>
+            </li>
+            <li><a class="recommended-reading__link" href="https://www.amazon.de/dp/0132350882"><strong
+                class="recommended-reading__media-type">Book</strong> Clean Code: A Handbook of Agile
                 Software
-                Craftsmanship <span>Robert C. Martin</span></a></li>
-            <li><a href="https://www.amazon.de/dp/020161622X/"><strong>Book</strong> The Pragmatic Programmer. From
-                Journeyman to Master <span>Andrew Hunt, David Thomas</span></a></li>
+                Craftsmanship <span class="recommended-reading__author-source">Robert C. Martin</span></a></li>
+            <li><a class="recommended-reading__link" href="https://www.amazon.de/dp/020161622X/"><strong
+                class="recommended-reading__media-type">Book</strong> The Pragmatic Programmer. From
+                Journeyman to Master <span
+                    class="recommended-reading__author-source">Andrew Hunt, David Thomas</span></a></li>
         </ol>
     </div>
 </section>
@@ -425,10 +448,13 @@
     <div class="inner">
         <h2><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt</h2>
         <ol>
-            <li><a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects <span>Sebastian Bergmann, jenkins-php.org</span></a>
+            <li><a class="recommended-reading__link" href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP
+                Projects <span
+                    class="recommended-reading__author-source">Sebastian Bergmann, jenkins-php.org</span></a>
             </li>
-            <li><a href="https://www.amazon.com/gp/product/0201485672"><strong>Book</strong> Refactoring: Improving the
-                Design of Existing Code <span>Martin Fowler</span></a></li>
+            <li><a class="recommended-reading__link" href="https://www.amazon.com/gp/product/0201485672"><strong
+                class="recommended-reading__media-type">Book</strong> Refactoring: Improving the
+                Design of Existing Code <span class="recommended-reading__author-source">Martin Fowler</span></a></li>
             <li>Sonarqube</li>
         </ol>
 
@@ -454,7 +480,9 @@
     <div class="inner">
         <h2><i class="fi-lightbulb"></i> Understanding your work</h2>
         <ol>
-            <li><a href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span>Paul Ford, www.bloomberg.com</span></a>
+            <li><a class="recommended-reading__link"
+                   href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span
+                class="recommended-reading__author-source">Paul Ford, www.bloomberg.com</span></a>
             </li>
         </ol>
     </div>
