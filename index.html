@@ -159,7 +159,7 @@
             font-size: 7px;
         }
 
-        section, .section {
+        .section {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -169,20 +169,6 @@
             overflow: hidden;
             padding: 3em 5em 5em;
             position: relative;
-        }
-
-        h1 {
-            font-family: 'Faster One';
-            font-weight: 400;
-            font-size: 4em;
-            font-style: normal;
-        }
-
-        h2 {
-            font-family: 'Faster One';
-            font-weight: 400;
-            font-size: 3.5em;
-            font-style: normal;
         }
 
         p {
@@ -199,13 +185,109 @@
             line-height: 1.5;
         }
 
+        i {
+            margin-right: .3em;
+        }
+
+        a {
+            color: #2962ff;
+        }
+
+        .footer {
+            background-color: #37474f;
+            color: #ffffff;
+        }
+
+        .small-print__link {
+            color: #ffffff;
+        }
+
+        @media screen and (min-width: 800px) {
+            .footer__body {
+                margin: 0 auto;
+                max-width: 120em;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            body {
+                font-size: 8px;
+            }
+        }
+
+        .toc {
+            color: #ffffff;
+            background-color: #FF5252;
+        }
+
+        .toc__link {
+            color: #ffffff;
+        }
+
+        .toc__link:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (min-width: 800px) {
+            .toc__body {
+                margin: 0 auto;
+                max-width: 120em;
+            }
+        }
+
+        .header {
+            color: #ffffff;
+            background-color: #3f51b5;
+        }
+
+        .header__headline {
+            font-family: 'Faster One';
+            font-weight: 400;
+            font-size: 4em;
+            font-style: normal;
+        }
+
+        @media screen and (min-width: 440px) {
+            .header__headline {
+                font-size: 6em;
+            }
+        }
+
+        @media screen and (min-width: 680px) {
+            .header__headline {
+                font-size: 10em;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .header__body {
+                margin: 0 auto;
+                max-width: 120em;
+            }
+
+            .header__headline {
+                font-size: 10em;
+            }
+        }
+
+        .header__link {
+            color: #ffffff;
+        }
+
+        .recommended-reading__headline {
+            font-family: 'Faster One';
+            font-weight: 400;
+            font-size: 3.5em;
+            font-style: normal;
+        }
+
         .recommended-reading__link {
             display: block;
             padding: .5em 0;
             text-decoration: none;
         }
 
-        li a:hover {
+        .recommended-reading__link:hover {
             background-color: aliceblue;
         }
 
@@ -221,68 +303,8 @@
             display: none;
         }
 
-        i {
-            margin-right: .3em;
-        }
-
-        a {
-            color: #2962ff;
-        }
-
-        .hero {
-            color: #ffffff;
-            background-color: #3f51b5;
-        }
-
-        .hero a {
-            color: #ffffff;
-        }
-
-        .toc {
-            color: #ffffff;
-            background-color: #FF5252;
-        }
-
-        .toc a {
-            color: #ffffff;
-        }
-
-        .toc a:hover {
-            text-decoration: underline;
-            background: none;
-        }
-
-        .footer {
-            background-color: #37474f;
-            color: #ffffff;
-        }
-
-        .footer a {
-            color: #ffffff;
-        }
-
-        @media screen and (min-width: 440px) {
-            h1 {
-                font-size: 6em;
-            }
-        }
-
-        @media screen and (min-width: 680px) {
-            h1 {
-                font-size: 10em;
-            }
-        }
-
         @media screen and (min-width: 800px) {
-            body {
-                font-size: 8px;
-            }
-
-            h1 {
-                font-size: 10em;
-            }
-
-            section .inner, .section .inner {
+            .recommended-reading__body {
                 margin: 0 auto;
                 max-width: 120em;
             }
@@ -295,33 +317,35 @@
     </style>
 </head>
 <body>
-<section class="hero">
-    <div class="inner">
-        <h1>Superhero.php</h1>
+<header class="section header">
+    <div class="header__body">
+        <h1 class="header__headline">Superhero.php</h1>
         <p>
-            Follow us on <a href="http://twitter.com/superherophp">Twitter</a>,
-            or <a href="https://github.com/superherophp/superherophp">GitHub</a>.<br>
-            We'd love to hear your suggestions <a href="mailto:hello@superherophp.com">via e-mail</a> or
-            <a href="https://github.com/superherophp/superherophp/issues">as Github Issues</a>.
+            Follow us on <a href="http://twitter.com/superherophp" class="header__link">Twitter</a>,
+            or <a href="https://github.com/superherophp/superherophp" class="header__link">GitHub</a>.<br>
+            We'd love to hear your suggestions <a href="mailto:hello@superherophp.com" class="header__link">via
+            e-mail</a> or
+            <a href="https://github.com/superherophp/superherophp/issues" class="header__link">as Github Issues</a>.
         </p>
     </div>
-</section>
+</header>
 
-<section class="toc">
-    <div class="inner">
-        <ol>
-            <li><a href="#local">Thinking Global Acting Local: Your local development environment</a></li>
-            <li><a href="#tools">Tools of the trade: Workflow, developer tools and debugging</a></li>
-            <li><a href="#code">Organizing your code: API design, patterns and frameworks</a></li>
-            <li><a href="#debug">Debugging and Profiling</a></li>
-            <li><a href="#secure">Securing your app</a></li>
-            <li><a href="#debt">Code Quality: Fighting against Technical Debt</a></li>
-            <li><a href="#deploy">Deploy and deliver</a></li>
-            <li><a href="#legacy">Dealing with Legacy Code</a></li>
-            <li><a href="#understand">Understanding your work</a></li>
+<section class="section recommended-reading toc">
+    <div class="toc__body">
+        <ol class="toc__list">
+            <li><a href="#local" class="toc__link">Thinking Global Acting Local: Your local development environment</a>
+            </li>
+            <li><a href="#tools" class="toc__link">Tools of the trade: Workflow, developer tools and debugging</a></li>
+            <li><a href="#code" class="toc__link">Organizing your code: API design, patterns and frameworks</a></li>
+            <li><a href="#debug" class="toc__link">Debugging and Profiling</a></li>
+            <li><a href="#secure" class="toc__link">Securing your app</a></li>
+            <li><a href="#debt" class="toc__link">Code Quality: Fighting against Technical Debt</a></li>
+            <li><a href="#deploy" class="toc__link">Deploy and deliver</a></li>
+            <li><a href="#legacy" class="toc__link">Dealing with Legacy Code</a></li>
+            <li><a href="#understand" class="toc__link">Understanding your work</a></li>
         </ol>
         <p>
-            Organized by <a href="https://github.com/Bussmeyer">Thomas Bußmeyer</a>,
+            Organized by <a href="https://github.com/Bussmeyer" class="toc__link">Thomas Bußmeyer</a>,
         <span class="updated-on"> – Last updated on <time
             datetime="2016-06-15T21:12:15Z" is="relative-time"
             title="Jun 15, 2016, 10:12 PM GMT+1">Jun 15, 2016</time>
@@ -330,9 +354,10 @@
     </div>
 </section>
 
-<section class="local" id="local">
-    <div class="inner">
-        <h2><i class="fi-laptop"></i> Thinking Global Acting Local: Your local development environment</h2>
+<section class="section recommended-reading local" id="local">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline" class="recommended-reading__headline"><i class="fi-laptop"></i>
+            Thinking Global Acting Local: Your local development environment</h2>
         <ol>
             <li><a class="recommended-reading__link"
                    href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
@@ -358,9 +383,10 @@
     </div>
 </section>
 
-<section class="tools" id="tools">
-    <div class="inner">
-        <h2><i class="fi-wrench"></i> Tools of the trade: Workflow and developer tools</h2>
+<section class="section recommended-reading tools" id="tools">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-wrench"></i> Tools of the trade: Workflow and developer
+            tools</h2>
         <ol>
             <li><a class="recommended-reading__link" href="http://rogerdudler.github.io/git-guide/index.html">git - the
                 simple guide <span
@@ -402,9 +428,10 @@
     </div>
 </section>
 
-<section class="code" id="code">
-    <div class="inner">
-        <h2><i class="fi-compass"></i> Organizing your code: API design, patterns and frameworks</h2>
+<section class="section recommended-reading code" id="code">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-compass"></i> Organizing your code: API design, patterns
+            and frameworks</h2>
         <ol>
             <li><a class="recommended-reading__link" href="http://www.phptherightway.com/">PHP The Right Way
                 <span class="recommended-reading__author-source">Josh Lockhart, www.phptherightway.com</span></a></li>
@@ -423,18 +450,18 @@
     </div>
 </section>
 
-<section class="debug" id="debug">
-    <div class="inner">
-        <h2><i class="fi-magnifying-glass"></i> Debugging and Profiling</h2>
+<section class="section recommended-reading debug" id="debug">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-magnifying-glass"></i> Debugging and Profiling</h2>
         <ol>
             <li>xdebug</li>
         </ol>
     </div>
 </section>
 
-<section class="secure" id="secure">
-    <div class="inner">
-        <h2><i class="fi-lock"></i> Securing your app</h2>
+<section class="section recommended-reading secure" id="secure">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-lock"></i> Securing your app</h2>
         <ol>
             <li>owasp zap
             <li>sqlmap</li>
@@ -444,9 +471,10 @@
     </div>
 </section>
 
-<section class="debt" id="debt">
-    <div class="inner">
-        <h2><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt</h2>
+<section class="section recommended-reading debt" id="debt">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt
+        </h2>
         <ol>
             <li><a class="recommended-reading__link" href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP
                 Projects <span
@@ -461,24 +489,24 @@
     </div>
 </section>
 
-<section class="deploy" id="deploy">
-    <div class="inner">
-        <h2><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
+<section class="section recommended-reading deploy" id="deploy">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
         <ol>
             <li>https://dzone.com/articles/continuous-integration-php</li>
         </ol>
     </div>
 </section>
 
-<section class="legacy" id="legacy">
-    <div class="inner">
-        <h2><i class="fi-puzzle"></i> Dealing with Legacy Code</h2>
+<section class="section recommended-reading legacy" id="legacy">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-puzzle"></i> Dealing with Legacy Code</h2>
     </div>
 </section>
 
-<section class="understand" id="understand">
-    <div class="inner">
-        <h2><i class="fi-lightbulb"></i> Understanding your work</h2>
+<section class="section recommended-reading understand" id="understand">
+    <div class="recommended-reading__body">
+        <h2 class="recommended-reading__headline"><i class="fi-lightbulb"></i> Understanding your work</h2>
         <ol>
             <li><a class="recommended-reading__link"
                    href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span
@@ -489,7 +517,7 @@
 </section>
 
 <footer class="footer section">
-    <div class="inner">
+    <div class="footer__body">
         <ul class="small-print">
             <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint | Disclaimer</a>
             </li>
