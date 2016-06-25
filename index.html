@@ -281,9 +281,11 @@
             font-style: normal;
         }
 
-        .recommended-reading__link {
-            display: block;
+        .recommended-reading__item {
             padding: .5em 0;
+        }
+
+        .recommended-reading__link {
             text-decoration: none;
         }
 
@@ -330,19 +332,23 @@
     </div>
 </header>
 
-<section class="section recommended-reading toc">
+<section class="section toc">
     <div class="toc__body">
         <ol class="toc__list">
-            <li><a href="#local" class="toc__link">Thinking Global Acting Local: Your local development environment</a>
+            <li class="toc__item"><a href="#local" class="toc__link">Thinking Global Acting Local: Your local
+                development environment</a>
             </li>
-            <li><a href="#tools" class="toc__link">Tools of the trade: Workflow, developer tools and debugging</a></li>
-            <li><a href="#code" class="toc__link">Organizing your code: API design, patterns and frameworks</a></li>
-            <li><a href="#debug" class="toc__link">Debugging and Profiling</a></li>
-            <li><a href="#secure" class="toc__link">Securing your app</a></li>
-            <li><a href="#debt" class="toc__link">Code Quality: Fighting against Technical Debt</a></li>
-            <li><a href="#deploy" class="toc__link">Deploy and deliver</a></li>
-            <li><a href="#legacy" class="toc__link">Dealing with Legacy Code</a></li>
-            <li><a href="#understand" class="toc__link">Understanding your work</a></li>
+            <li class="toc__item"><a href="#tools" class="toc__link">Tools of the trade: Workflow, developer tools and
+                debugging</a></li>
+            <li class="toc__item"><a href="#code" class="toc__link">Organizing your code: API design, patterns and
+                frameworks</a></li>
+            <li class="toc__item"><a href="#debug" class="toc__link">Debugging and Profiling</a></li>
+            <li class="toc__item"><a href="#secure" class="toc__link">Securing your app</a></li>
+            <li class="toc__item"><a href="#debt" class="toc__link">Code Quality: Fighting against Technical Debt</a>
+            </li>
+            <li class="toc__item"><a href="#deploy" class="toc__link">Deploy and deliver</a></li>
+            <li class="toc__item"><a href="#legacy" class="toc__link">Dealing with Legacy Code</a></li>
+            <li class="toc__item"><a href="#understand" class="toc__link">Understanding your work</a></li>
         </ol>
         <p>
             Organized by <a href="https://github.com/Bussmeyer" class="toc__link">Thomas Bußmeyer</a>,
@@ -359,24 +365,28 @@
         <h2 class="recommended-reading__headline" class="recommended-reading__headline"><i class="fi-laptop"></i>
             Thinking Global Acting Local: Your local development environment</h2>
         <ol>
-            <li><a class="recommended-reading__link"
-                   href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-for-creating-an-isolated-environment">Should
                 I use Vagrant or Docker for creating an isolated environment? <span
                     class="recommended-reading__author-source">stackoverflow.com</span></a></li>
-            <li><a class="recommended-reading__link" href="https://webdevops.io/projects/dockerfiles/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://webdevops.io/projects/dockerfiles/"><strong
                 class="recommended-reading__media-type" class="recommended-reading__media-type">Tool</strong> Making web
                 development easier
                 <span class="recommended-reading__author-source">Webdevops, webdevops.io</span></a></li>
-            <li><a class="recommended-reading__link" href="https://www.vagrantup.com/docs/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.vagrantup.com/docs/"><strong
                 class="recommended-reading__media-type">Tool</strong> Development environments made easy.
                 <span class="recommended-reading__author-source">HashiCorp, www.vagrantup.com</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.docker.com/products/docker-toolbox"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.docker.com/products/docker-toolbox"><strong
                 class="recommended-reading__media-type">Tool</strong> Docker Toolbox <span
                 class="recommended-reading__author-source">Docker Inc., www.docker.com</span></a>
             </li>
-            <li><a class="recommended-reading__link"
-                   href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker for PHP Developers
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker
+                for PHP Developers
                 <span class="recommended-reading__author-source">Josh Lockhart, www.newmediacampaigns.com</span></a>
             </li>
         </ol>
@@ -388,42 +398,51 @@
         <h2 class="recommended-reading__headline"><i class="fi-wrench"></i> Tools of the trade: Workflow and developer
             tools</h2>
         <ol>
-            <li><a class="recommended-reading__link" href="http://rogerdudler.github.io/git-guide/index.html">git - the
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://rogerdudler.github.io/git-guide/index.html">git - the
                 simple guide <span
                     class="recommended-reading__author-source">Roger Dudler, rogerdudler.github.io</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.atlassian.com/git/">Getting Git Right <span
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.atlassian.com/git/">Getting Git Right <span
                 class="recommended-reading__author-source">Atlassian, www.atlassian.com</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="http://nvie.com/posts/a-successful-git-branching-model/">A
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://nvie.com/posts/a-successful-git-branching-model/">A
                 successful Git branching model
                 <span class="recommended-reading__author-source">Vincent Driessen, nvie.com</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://guides.github.com/introduction/flow/">Understanding
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://guides.github.com/introduction/flow/">Understanding
                 the GitHub Flow <span
                     class="recommended-reading__author-source">Github, guides.github.com</span> <span
                     class="recommended-reading__read-time">5 minute read</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.sourcetreeapp.com/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.sourcetreeapp.com/"><strong
                 class="recommended-reading__media-type">Tool</strong> Sourcetreeapp <span
                 class="recommended-reading__author-source">Atlassian</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.jetbrains.com/phpstorm/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.jetbrains.com/phpstorm/"><strong
                 class="recommended-reading__media-type">Tool</strong> PHPStorm <span
                 class="recommended-reading__author-source">JetBrains</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://rtyley.github.io/bfg-repo-cleaner/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://rtyley.github.io/bfg-repo-cleaner/"><strong
                 class="recommended-reading__media-type">Tool</strong> BFG Repo-Cleaner <span
                 class="recommended-reading__author-source">Roberto Tyley</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://martinfowler.com/bliki/FeatureBranch.html">FeatureBranch <span
                 class="recommended-reading__author-source">Martin Fowler, martinfowler.com/</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://martinfowler.com/bliki/FeatureToggle.html">FeatureToggle <span
                 class="recommended-reading__author-source">Martin Fowler, martinfowler.com/</span></a>
             </li>
-            <li>composer</li>
-            <li>phpunit</li>
+            <li class="recommended-reading__item">composer</li>
+            <li class="recommended-reading__item">phpunit</li>
         </ol>
     </div>
 </section>
@@ -433,16 +452,20 @@
         <h2 class="recommended-reading__headline"><i class="fi-compass"></i> Organizing your code: API design, patterns
             and frameworks</h2>
         <ol>
-            <li><a class="recommended-reading__link" href="http://www.phptherightway.com/">PHP The Right Way
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://www.phptherightway.com/">PHP The Right Way
                 <span class="recommended-reading__author-source">Josh Lockhart, www.phptherightway.com</span></a></li>
-            <li><a class="recommended-reading__link" href="http://12factor.net/">The Twelve-Factor App. <span
-                class="recommended-reading__author-source">Adam Wiggins, 12factor.net</span></a>
+            <li class="recommended-reading__item"><a class="recommended-reading__link" href="http://12factor.net/">The
+                Twelve-Factor App. <span
+                    class="recommended-reading__author-source">Adam Wiggins, 12factor.net</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.amazon.de/dp/0132350882"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.amazon.de/dp/0132350882"><strong
                 class="recommended-reading__media-type">Book</strong> Clean Code: A Handbook of Agile
                 Software
                 Craftsmanship <span class="recommended-reading__author-source">Robert C. Martin</span></a></li>
-            <li><a class="recommended-reading__link" href="https://www.amazon.de/dp/020161622X/"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.amazon.de/dp/020161622X/"><strong
                 class="recommended-reading__media-type">Book</strong> The Pragmatic Programmer. From
                 Journeyman to Master <span
                     class="recommended-reading__author-source">Andrew Hunt, David Thomas</span></a></li>
@@ -454,7 +477,7 @@
     <div class="recommended-reading__body">
         <h2 class="recommended-reading__headline"><i class="fi-magnifying-glass"></i> Debugging and Profiling</h2>
         <ol>
-            <li>xdebug</li>
+            <li class="recommended-reading__item">xdebug</li>
         </ol>
     </div>
 </section>
@@ -463,10 +486,10 @@
     <div class="recommended-reading__body">
         <h2 class="recommended-reading__headline"><i class="fi-lock"></i> Securing your app</h2>
         <ol>
-            <li>owasp zap
-            <li>sqlmap</li>
-            <li>https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet</li>
-            <li>Security Poster as PDF</li>
+            <li class="recommended-reading__item">owasp zap
+            <li class="recommended-reading__item">sqlmap</li>
+            <li class="recommended-reading__item">https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet</li>
+            <li class="recommended-reading__item">Security Poster as PDF</li>
         </ol>
     </div>
 </section>
@@ -476,14 +499,16 @@
         <h2 class="recommended-reading__headline"><i class="fi-eye"></i> Code Quality: Fighting against Technical Debt
         </h2>
         <ol>
-            <li><a class="recommended-reading__link" href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP
+            <li class="recommended-reading__item"><a class="recommended-reading__link" href="http://jenkins-php.org/">Template
+                for Jenkins Jobs for PHP
                 Projects <span
                     class="recommended-reading__author-source">Sebastian Bergmann, jenkins-php.org</span></a>
             </li>
-            <li><a class="recommended-reading__link" href="https://www.amazon.com/gp/product/0201485672"><strong
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="https://www.amazon.com/gp/product/0201485672"><strong
                 class="recommended-reading__media-type">Book</strong> Refactoring: Improving the
                 Design of Existing Code <span class="recommended-reading__author-source">Martin Fowler</span></a></li>
-            <li>Sonarqube</li>
+            <li class="recommended-reading__item">Sonarqube</li>
         </ol>
 
     </div>
@@ -493,7 +518,7 @@
     <div class="recommended-reading__body">
         <h2 class="recommended-reading__headline"><i class="fi-upload-cloud"></i> Deploy and deliver</h2>
         <ol>
-            <li>https://dzone.com/articles/continuous-integration-php</li>
+            <li class="recommended-reading__item">https://dzone.com/articles/continuous-integration-php</li>
         </ol>
     </div>
 </section>
@@ -508,9 +533,10 @@
     <div class="recommended-reading__body">
         <h2 class="recommended-reading__headline"><i class="fi-lightbulb"></i> Understanding your work</h2>
         <ol>
-            <li><a class="recommended-reading__link"
-                   href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is code? <span
-                class="recommended-reading__author-source">Paul Ford, www.bloomberg.com</span></a>
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What
+                is code? <span
+                    class="recommended-reading__author-source">Paul Ford, www.bloomberg.com</span></a>
             </li>
         </ol>
     </div>
