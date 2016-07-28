@@ -198,6 +198,10 @@
             color: #ffffff;
         }
 
+        .small-print__item {
+            display: inline;
+        }
+
         .small-print__link {
             color: #ffffff;
         }
@@ -220,6 +224,10 @@
             background-color: #FF5252;
         }
 
+        .toc__item {
+            padding: .5em 0;
+        }
+
         .toc__link {
             color: #ffffff;
         }
@@ -236,8 +244,8 @@
         }
 
         .header {
-            color: #ffffff;
             background-color: #3f51b5;
+            color: #ffffff;
         }
 
         .header__headline {
@@ -370,6 +378,11 @@
                 I use Vagrant or Docker for creating an isolated environment? <span
                     class="recommended-reading__author-source">stackoverflow.com</span></a></li>
             <li class="recommended-reading__item"><a class="recommended-reading__link"
+                                                     href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker
+                for PHP Developers
+                <span class="recommended-reading__author-source">Josh Lockhart, www.newmediacampaigns.com</span></a>
+            </li>
+            <li class="recommended-reading__item"><a class="recommended-reading__link"
                                                      href="https://webdevops.io/projects/dockerfiles/"><strong
                 class="recommended-reading__media-type" class="recommended-reading__media-type">Tool</strong> Making web
                 development easier
@@ -383,11 +396,6 @@
                                                      href="https://www.docker.com/products/docker-toolbox"><strong
                 class="recommended-reading__media-type">Tool</strong> Docker Toolbox <span
                 class="recommended-reading__author-source">Docker Inc., www.docker.com</span></a>
-            </li>
-            <li class="recommended-reading__item"><a class="recommended-reading__link"
-                                                     href="http://www.newmediacampaigns.com/blog/docker-for-php-developers">Docker
-                for PHP Developers
-                <span class="recommended-reading__author-source">Josh Lockhart, www.newmediacampaigns.com</span></a>
             </li>
         </ol>
     </div>
@@ -545,9 +553,9 @@
 <footer class="footer section">
     <div class="footer__body">
         <ul class="small-print">
-            <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint | Disclaimer</a>
+            <li class="small-print__item"><a href="/imprint.html" class="small-print__link">Imprint & Disclaimer</a>
             </li>
-            <li>Made with <i class="fi-heart"></i> in Berlin</li>
+            <li class="small-print__item">Made with <i class="fi-heart"></i> in Berlin</li>
         </ul>
     </div>
 </footer>
